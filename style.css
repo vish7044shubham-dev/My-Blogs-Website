@@ -191,7 +191,7 @@ body{
 
 /* --------------FEATURED CONTAINER---------------- */
 .featured_article_container{
-    margin: 40px auto;
+    margin: 35px auto;
     width: 90%;
     max-width: 1200px;
 }
