@@ -308,17 +308,20 @@ body{
     padding-top: 15px;
 }
 
+ /* -------------- BROWSE CATEGORY------------ */
+
 .browse_main_container{
     font-family: "Raleway", sans-serif;
     display: flex;
     flex-direction: column;
     gap: 25px;
+    margin: auto;
 }
 
 .browse_heading_main_container h1{
     font-size: 24px;
     margin-left: 10px;
-    font-weight: 700;
+    font-weight: 800;
     letter-spacing: 1px;
 }
 
@@ -336,6 +339,7 @@ body{
 .browse_heading_container{
     border-left: 4px solid #2563EB;
     height: fit-content;
+
     
 }
 
@@ -440,4 +444,111 @@ body{
 
 .browse_type_card_dot span{
     margin-bottom: 2px;
+}
+
+/* ----------LATEST ARTICLE--------------- */
+/* LATEST ARTICLE HEADER SAME AS BROWSE CONTAINER SO I COPY PATSED IT   */
+
+/*-------CARD CONTAINER------*/
+.card_main_container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));  
+    margin: 20px 30px;
+    gap: 24px;
+}
+.card_container{
+   
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: #FCFCFE;
+    box-shadow: 0px 1px 6px gray;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; 
+}
+
+.image_container{
+    height :210px;
+    width: 100%;
+}
+.image_container img{
+    height: 100%;
+    width: 100%;
+    
+}
+
+.info_section{
+    margin: 15px 17px 20px 17px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+.card_type {
+    background-color: #E2C5FE;
+    width: fit-content;
+    border-radius: 5px;
+    padding: 5px;
+
+}
+.card_type span{
+    color: #713BC2;
+    font-weight: 600;
+    letter-spacing: 0.05rem;
+    font-size: 0.8rem;
+    margin: 8px;
+}
+.derscription_container{
+    overflow: hidden;
+    
+
+}
+.info_section{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+.card_footer{
+    display: flex;
+    gap: 8px;
+    margin-top: 20px;
+
+}
+.cardtype_info p{
+    font-weight: 500;
+    font-size: 1.1rem;
+    color: gray;
+
+}
+
+.author_img img{
+    height: 30px;
+    width : 30px;
+}
+.dob_timeread{
+    display: flex;
+}
+.timeread_container{
+    display: flex;
+
+    align-items: center;
+    gap: 5px;
+    margin-left: 6px;
+}
+.name{
+    font-size: 1.05rem;
+    font-weight: 600;
+}
+
+.dob_timeread{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-weight: 500;
+    color: gray;
+}
+
+.dot{
+    margin-bottom: 9px;
+    font-weight: bold;
 }
