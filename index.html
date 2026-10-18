@@ -19,12 +19,16 @@
                 <div class="header_title">
                     <a href="">
                         <span id="blog">Blogs</span><span id="hub">Hub</span>
-                </div>
                     </a>
+                </div>
                 <div class="header_des">
                    <span>Ideas. Stories. Beyond</span>
                 </div>
             </div>
+
+            <!-- Hamburger Menu Checkbox (Hidden on Desktop) -->
+            <input type="checkbox" id="menu_toggle" class="menu_toggle">
+
             <div class="header_nav_container">
                 <div class="header_nav">
                     <nav>
@@ -34,50 +38,58 @@
                             <li><a href="#">About</a></li>
                             <li><a href="#">Contact</a></li>
                         </ul>
-                </nav>
+                    </nav>
+                </div>
             </div>
-            </div>
+
             <div class="header_side_container">
-              <div class="header_search_container">
-                <div class="search_icon">
-                    <img src="search.png" alt="search img">
-                </div>
-                <div class="text">
-                    <span>Search blogs....</span>
-                </div>
-              </div>  
-              <div class="dark_image_container">
+                <div class="header_search_container">
+                    <div class="search_icon">
+                        <img src="search.png" alt="search img">
+                    </div>
+                    <div class="text">
+                        <input type="text" class="search_input" placeholder="Search blogs....">
+                    </div>
+                </div>  
+                <div class="dark_image_container">
                     <img src="dark-mode.png" alt="darkmodeimg">
+                </div>
+                <!-- Hamburger Icon Label (Visible on Mobile) -->
+                <label for="menu_toggle" class="hamburger_menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </label>
+            </div>
+        </div>
+    </div>
+
+    <!-- /*    ----------HERO CONTAINER-------------- */ -->
+    <section class="hero_container">
+        <img src="heroimg.png" alt="img">
+        <div class="hero_content">
+            <div class="welcome">
+                <p id="welcome">WELCOME TO BLOGSHUB</p>
+            </div>
+            
+            <div class="heading">
+                <h1>Explore Stories</br>
+            Discover <span>Stories.</span></h1>
+            </div>
+            
+            <div class="hero_description">
+                <p class="description">A modern space for technology, travel, gaming, lifestyle and everything that sparks curiosity. </p>
+            </div>
+            <div class="lower_division">
+                <div class="firstbox">
+                    <span>Explore Blogs</span>
+                </div>
+                <div class="secondbox">
+                    <span>Learn More</span>    
                 </div>
             </div>
         </div>
-</div>
-<!-- /*    ----------HERO CONTAINER-------------- */ -->
-        <section class="hero_container">
-            <img src="heroimg.png" alt="img">
-            <div class="hero_content">
-                <div class="welcome">
-                    <p id="welcome">WELCOME TO BLOGSHUB</p>
-                </div>
-                
-                <div class="heading">
-                    <h1>Explore Stories</br>
-                Discover <span>Stories.</span></h1>
-                </div>
-                
-                <div class="hero_description">
-                    <p class="description">A modern space for technology, travel, gaming, lifestyle and everything that sparks curiosity. </p>
-                </div>
-                <div class="lower_division">
-                    <div class="firstbox">
-                        <span>Explore Blogs</span>
-                    </div>
-                    <div class="secondbox">
-                        <span>Learn More</span>    
-                    </div>
-                </div>
-                
-</div>       </section>
+    </section>
 
    <!-- --------------FEATURED CONTAINER----------------  -->
 
@@ -94,44 +106,42 @@
             <div class="second_inside_container">
                 <div class="second_firstbox">
                     <div class="technology">
-                    <span>TECHNOLOGY</span>
-                </div>
-                <div class="second_title">
-                    <h1>How AI Is Changing the Future of Development</h1>
-                </div>
-                <div class="second_title_info">
-                  <p>Artificial Intelligence is no longer just a trend - it's reshaping how we build, learn and innovate. Let's explore the real impact of Al in everyday development.</p>  
-                </div>
-                <div class="second_firstboxandsecondbox">
-                    <div class="second_first_main_box">
-                    <div class="footer_img">
-                    <img src="person.png" alt="">
-                </div>
+                        <span>TECHNOLOGY</span>
+                    </div>
+                    <div class="second_title">
+                        <h1>How AI Is Changing the Future of Development</h1>
+                    </div>
+                    <div class="second_title_info">
+                        <p>Artificial Intelligence is no longer just a trend - it's reshaping how we build, learn and innovate. Let's explore the real impact of Al in everyday development.</p>  
+                    </div>
+                    <div class="second_firstboxandsecondbox">
+                        <div class="second_first_main_box">
+                            <div class="footer_img">
+                                <img src="person.png" alt="">
+                            </div>
 
-                <div class="author_info">
-                    
-                <div class="my_name">
-                    <span>Shubham Vishwakarma</span>
-                </div>
-                <div class="author_publish_time">
-                <div class="article_date">
-                    <span>Sept 18, 2026</span>
-                </div>
-                <div class="reading_time">
-                    5min read
-                </div>
-                </div>
-                <!-- </div> -->
-                </div><!-- author_info---------- -->
-                </div><!-----------second_firstbox--------- -->
-                <div class="second_secondbox">
-                    <a href=""><img src="teerh.png" alt=""></a>
-                </div>
-                </div>
-            </div><!--second_inside_container -->
-        </div><!-- ---second main container------ -->
+                            <div class="author_info">
+                                <div class="my_name">
+                                    <span>Shubham Vishwakarma</span>
+                                </div>
+                                <div class="author_publish_time">
+                                    <div class="article_date">
+                                        <span>Sept 18, 2026</span>
+                                    </div>
+                                    <div class="reading_time">
+                                        5min read
+                                    </div>
+                                </div>
+                            </div><!-- author_info---------- -->
+                        </div><!-----------second_firstbox--------- -->
+                        <div class="second_secondbox">
+                            <a href=""><img src="teerh.png" alt=""></a>
+                        </div>
+                    </div>
+                </div><!--second_inside_container -->
+            </div><!-- ---second main container------ -->
         </div>
-   </div>
+    </div>
    </div>
 
         <!-- ---------Browse category--------- -->
@@ -143,13 +153,13 @@
                 </div><!-- browse_heading_container -->
                 <a href=""> 
                     <div class="viewall">
-                    <div class="text_viewall">
-                        <span>View all</span>
-                    </div>
-                <div class="viewall_img">
-                    <img src="arrow (1).png" alt="">
-                </div>
-                </div><!-- viewall -->
+                        <div class="text_viewall">
+                            <span>View all</span>
+                        </div>
+                        <div class="viewall_img">
+                            <img src="arrow (1).png" alt="">
+                        </div>
+                    </div><!-- viewall -->
                 </a>
             </div><!-- browse_main_heading_container -->
 
@@ -159,79 +169,75 @@
                 </div><!-- all_box -->
                 <div class="browse_type_card">
                     <div class="browse_type_box">
-                    <div class="browse_type_card_img">
-                        <img src="laptop.png" alt="">
-                    </div>
-                    <div class="browse_type_card_text">
-                        <span>Technology</span>
-                    </div>
+                        <div class="browse_type_card_img">
+                            <img src="laptop.png" alt="">
+                        </div>
+                        <div class="browse_type_card_text">
+                            <span>Technology</span>
+                        </div>
                     </div><!-- browse_type_box -->
-            </div><!-- browse_type_card -->
+                </div><!-- browse_type_card -->
 
-            <!-- 2222 -->
-            <div class="browse_type_card">
+                <!-- 2222 -->
+                <div class="browse_type_card">
                     <div class="browse_type_box">
-                    <div class="browse_type_card_img">
-                        <img src="airplane.png" alt="">
-                    </div>
-                    <div class="browse_type_card_text">
-                        <span>Travel</span>
-                    </div>
+                        <div class="browse_type_card_img">
+                            <img src="airplane.png" alt="">
+                        </div>
+                        <div class="browse_type_card_text">
+                            <span>Travel</span>
+                        </div>
                     </div><!-- browse_type_box -->
-            </div><!-- browse_type_card -->
+                </div><!-- browse_type_card -->
 
-            <!-- 3333 -->
-            <div class="browse_type_card">
+                <!-- 3333 -->
+                <div class="browse_type_card">
                     <div class="browse_type_box">
-                    <div class="browse_type_card_img">
-                        <img src="console.png" alt="">
-                    </div>
-                    <div class="browse_type_card_text">
-                        <span>Gaming</span>
-                    </div>
+                        <div class="browse_type_card_img">
+                            <img src="console.png" alt="">
+                        </div>
+                        <div class="browse_type_card_text">
+                            <span>Gaming</span>
+                        </div>
                     </div><!-- browse_type_box -->
-            </div><!-- browse_type_card -->
+                </div><!-- browse_type_card -->
 
-
-            <!-- 4444 -->
-            <div class="browse_type_card">
+                <!-- 4444 -->
+                <div class="browse_type_card">
                     <div class="browse_type_box">
-                    <div class="browse_type_card_img">
-                        <img src="apple.png" alt="">
-                    </div>
-                    <div class="browse_type_card_text">
-                        <span>Lifestyle</span>
-                    </div>
+                        <div class="browse_type_card_img">
+                            <img src="apple.png" alt="">
+                        </div>
+                        <div class="browse_type_card_text">
+                            <span>Lifestyle</span>
+                        </div>
                     </div><!-- browse_type_box -->
-            </div><!-- browse_type_card -->
+                </div><!-- browse_type_card -->
 
-            <!-- 5555 -->
-            <div class="browse_type_card">
+                <!-- 5555 -->
+                <div class="browse_type_card">
                     <div class="browse_type_box">
-                    <div class="browse_type_card_img">
-                        <img src="ai.png" alt="">
-                   </div>
-                    <div class="browse_type_card_text">
-                        <span>AI</span>
-                    </div>
+                        <div class="browse_type_card_img">
+                            <img src="ai.png" alt="">
+                        </div>
+                        <div class="browse_type_card_text">
+                            <span>AI</span>
+                        </div>
                     </div><!-- browse_type_box -->
-            </div><!-- browse_type_card -->
+                </div><!-- browse_type_card -->
 
-            <!-- 6666 -->
-            <div class="browse_type_card">
+                <!-- 6666 -->
+                <div class="browse_type_card">
                     <div class="browse_type_box">
-                    <div class="browse_type_card_img">
-                        <img src="more.png" alt="">
-                    </div>
-                    <div class="browse_type_card_text">
-                        <span>Random</span>
-                    </div>
+                        <div class="browse_type_card_img">
+                            <img src="more.png" alt="">
+                        </div>
+                        <div class="browse_type_card_text">
+                            <span>Random</span>
+                        </div>
                     </div><!-- browse_type_box -->
-            </div><!-- browse_type_card -->
-
-            
-
-
+                </div><!-- browse_type_card -->
+            </div>
        </div> <!-- browse_main_container -->
 
 
@@ -245,245 +251,244 @@
                 </div><!-- browse_heading_container -->
                 <a href=""> 
                     <div class="viewall">
-                    <div class="text_viewall">
-                        <span>View all</span>
-                    </div>
-                <div class="viewall_img">
-                    <img src="arrow (1).png" alt="">
-                </div>
-                </div><!-- viewall -->
+                        <div class="text_viewall">
+                            <span>View all</span>
+                        </div>
+                        <div class="viewall_img">
+                            <img src="arrow (1).png" alt="">
+                        </div>
+                    </div><!-- viewall -->
                 </a>
             </div><!-- browse_main_heading_container -->
 
             <div class="card_main_container">
                 <!-- card1 -->
-                <div class="card_container">
-                    <div class="image_container">
-                        <img src="gaming.jpg" alt="gaming img">
-                    </div>
-                    <div class="derscription_container1">
-                        <div class="info_section">
-                            <div class="card_type">
-                                <span>GAMING</span>
-                            </div>
-                            <div class="cardtype_heading">
-                                <h2>The Evolution of Gaming of 2026</h2>
-                            </div>
-                            <div class="cardtype_info">
-                                <p>From pixelated classics to hyper-realistic worlds, gaming has come a long way. Let's look at what's next.</p>
-                            </div>
-                            <div class="card_footer">
-                                <div class="author_img">
-                                    <img src="man.png" alt="">
+                <a href="#" class="ancard1">
+                    <div class="card_container">
+                        <div class="image_container">
+                            <img src="gaming.jpg" alt="gaming img">
+                        </div>
+                        <div class="derscription_container1">
+                            <div class="info_section">
+                                <div class="card_type">
+                                    <span>GAMING</span>
                                 </div>
-                                <div class="author_info">
-                                    <div class="name">
-                                        <span>Shubham</span>
+                                <div class="cardtype_heading">
+                                    <h2>The Evolution of Gaming of 2026</h2>
+                                </div>
+                                <div class="cardtype_info">
+                                    <p>From pixelated classics to hyper-realistic worlds, gaming has come a long way. Let's look at what's next.</p>
+                                </div>
+                                <div class="card_footer">
+                                    <div class="author_img">
+                                        <img src="man.png" alt="">
                                     </div>
-                                    <div class="dob_timeread">
-                                        <div class="dob">
-                                            <span>Apr 1, 2005</span>
+                                    <div class="author_info">
+                                        <div class="name">
+                                            <span>Shubham</span>
                                         </div>
-                                        <div class="timeread_container">
-                                            <div class="dot">
-                                                <span>.</span>
+                                        <div class="dob_timeread">
+                                            <div class="dob">
+                                                <span>Apr 1, 2005</span>
                                             </div>
-                                            <div class="timeread">
-                                                <span>8 min read</span>
+                                            <div class="timeread_container">
+                                                <div class="dot">
+                                                    <span>.</span>
+                                                </div>
+                                                <div class="timeread">
+                                                    <span>8 min read</span>
+                                                </div>
                                             </div>
                                         </div>
-                                    </div>
-
-                              </div>  <!-- author_info -->
-                            </div><!-- card_footer -->
-
-                         </div><!--info_section -->
-                    </div> <!--derscription_container -->
-                </div><!-- card_container -->
+                                    </div>  <!-- author_info -->
+                                </div><!-- card_footer -->
+                            </div><!--info_section -->
+                        </div> <!--derscription_container -->
+                    </div><!-- card_container -->
+                </a>
 
                  <!-- card2 -->
-                <div class="card_container">
-                    <div class="image_container">
-                        <img src="Travel.jpg" alt="gaming img">
-                    </div>
-                    <div class="derscription_container2">
-                        <div class="info_section">
-                            <div class="card_type2">
-                                <span>Travel</span>
-                            </div>
-                            <div class="cardtype_heading">
-                                <h2>A Journey Through the Mountains</h2>
-                            </div>
-                            <div class="cardtype_info">
-                                <p>Travel is not just about places, but about the stories we collect along the way.</p>
-                            </div>
-                            <div class="card_footer">
-                                <div class="author_img">
-                                    <img src="man3.png" alt="">
+                <a href="#" class="ancard2">
+                    <div class="card_container">
+                        <div class="image_container">
+                            <img src="Travel.jpg" alt="gaming img">
+                        </div>
+                        <div class="derscription_container2">
+                            <div class="info_section">
+                                <div class="card_type2">
+                                    <span>Travel</span>
                                 </div>
-                                <div class="author_info">
-                                    <div class="name">
-                                        <span>Sahil</span>
+                                <div class="cardtype_heading">
+                                    <h2>A Journey Through the Mountains</h2>
+                                </div>
+                                <div class="cardtype_info">
+                                    <p>Travel is not just about places, but about the stories we collect along the way.</p>
+                                </div>
+                                <div class="card_footer">
+                                    <div class="author_img">
+                                        <img src="man3.png" alt="">
                                     </div>
-                                    <div class="dob_timeread">
-                                        <div class="dob">
-                                            <span>Sept 1, 2007</span>
+                                    <div class="author_info">
+                                        <div class="name">
+                                            <span>Sahil</span>
                                         </div>
-                                        <div class="timeread_container">
-                                            <div class="dot">
-                                                <span>.</span>
+                                        <div class="dob_timeread">
+                                            <div class="dob">
+                                                <span>Sept 1, 2007</span>
                                             </div>
-                                            <div class="timeread">
-                                                <span>7 min read</span>
+                                            <div class="timeread_container">
+                                                <div class="dot">
+                                                    <span>.</span>
+                                                </div>
+                                                <div class="timeread">
+                                                    <span>7 min read</span>
+                                                </div>
                                             </div>
                                         </div>
-                                    </div>
-
-                              </div>  <!-- author_info -->
-                            </div><!-- card_footer -->
-
-                         </div><!--info_section -->
-                    </div> <!--derscription_container -->
-                </div><!-- card_container -->
+                                    </div>  <!-- author_info -->
+                                </div><!-- card_footer -->
+                            </div><!--info_section -->
+                        </div> <!--derscription_container -->
+                    </div><!-- card_container -->
+                </a>
 
                  <!-- card3 -->
-                <div class="card_container">
-                    <div class="image_container">
-                        <img src="lifestyle.jpg" alt="gaming img">
-                    </div>
-                    <div class="derscription_container3">
-                        <div class="info_section">
-                            <div class="card_type3">
-                                <span>Lifestyle</span>
-                            </div>
-                            <div class="cardtype_heading">
-                                <h2>Building a Productive Daily Routine</h2>
-                            </div>
-                            <div class="cardtype_info">
-                                <p>Simple habits that can help you stay consistent, focused and happier every day.</p>
-                            </div>
-                            <div class="card_footer">
-                                <div class="author_img">
-                                    <img src="boy.png" alt="">
+                <a href="#"  class="ancard3">
+                    <div class="card_container">
+                        <div class="image_container">
+                            <img src="lifestyle.jpg" alt="gaming img">
+                        </div>
+                        <div class="derscription_container3">
+                            <div class="info_section">
+                                <div class="card_type3">
+                                    <span>Lifestyle</span>
                                 </div>
-                                <div class="author_info">
-                                    <div class="name">
-                                        <span>Rohit</span>
+                                <div class="cardtype_heading">
+                                    <h2>Building a Productive Daily Routine</h2>
+                                </div>
+                                <div class="cardtype_info">
+                                    <p>Simple habits that can help you stay consistent, focused and happier every day.</p>
+                                </div>
+                                <div class="card_footer">
+                                    <div class="author_img">
+                                        <img src="boy.png" alt="">
                                     </div>
-                                    <div class="dob_timeread">
-                                        <div class="dob">
-                                            <span>Sep 1, 2006</span>
+                                    <div class="author_info">
+                                        <div class="name">
+                                            <span>Rohit</span>
                                         </div>
-                                        <div class="timeread_container">
-                                            <div class="dot">
-                                                <span>.</span>
+                                        <div class="dob_timeread">
+                                            <div class="dob">
+                                                <span>Sep 1, 2006</span>
                                             </div>
-                                            <div class="timeread">
-                                                <span>9 min read</span>
+                                            <div class="timeread_container">
+                                                <div class="dot">
+                                                    <span>.</span>
+                                                </div>
+                                                <div class="timeread">
+                                                    <span>9 min read</span>
+                                                </div>
                                             </div>
                                         </div>
-                                    </div>
-
-                              </div>  <!-- author_info -->
-                            </div><!-- card_footer -->
-
-                         </div><!--info_section -->
-                    </div> <!--derscription_container -->
-                </div><!-- card_container -->
+                                    </div>  <!-- author_info -->
+                                </div><!-- card_footer -->
+                            </div><!--info_section -->
+                        </div> <!--derscription_container -->
+                    </div><!-- card_container -->
+                </a>
 
                  <!-- card4 -->
-                <div class="card_container">
-                    <div class="image_container">
-                        <img src="AI.jpg" alt="gaming img">
-                    </div>
-                    <div class="derscription_container4">
-                        <div class="info_section">
-                            <div class="card_type4">
-                                <span>AI</span>
-                            </div>
-                            <div class="cardtype_heading">
-                                <h2>Is AI a Threat or an Opportunity?</h2>
-                            </div>
-                            <div class="cardtype_info">
-                                <p>A balanced look at the risks and possibilities of Artificial Intelligence in our future society.</p>
-                            </div>
-                            <div class="card_footer">
-                                <div class="author_img">
-                                    <img src="man4.png" alt="">
+                <a href="#" class="ancard4">
+                    <div class="card_container">
+                        <div class="image_container">
+                            <img src="AI.jpg" alt="gaming img">
+                        </div>
+                        <div class="derscription_container4">
+                            <div class="info_section">
+                                <div class="card_type4">
+                                    <span>AI</span>
                                 </div>
-                                <div class="author_info">
-                                    <div class="name">
-                                        <span>Vicky</span>
+                                <div class="cardtype_heading">
+                                    <h2>Is AI a Threat or an Opportunity?</h2>
+                                </div>
+                                <div class="cardtype_info">
+                                    <p>A balanced look at the risks and possibilities of Artificial Intelligence in our future society.</p>
+                                </div>
+                                <div class="card_footer">
+                                    <div class="author_img">
+                                        <img src="man4.png" alt="">
                                     </div>
-                                    <div class="dob_timeread">
-                                        <div class="dob">
-                                            <span>Jan 27, 1999</span>
+                                    <div class="author_info">
+                                        <div class="name">
+                                            <span>Vicky</span>
                                         </div>
-                                        <div class="timeread_container">
-                                            <div class="dot">
-                                                <span>.</span>
+                                        <div class="dob_timeread">
+                                            <div class="dob">
+                                                <span>Jan 27, 1999</span>
                                             </div>
-                                            <div class="timeread">
-                                                <span>19 min read</span>
+                                            <div class="timeread_container">
+                                                <div class="dot">
+                                                    <span>.</span>
+                                                </div>
+                                                <div class="timeread">
+                                                    <span>19 min read</span>
+                                                </div>
                                             </div>
                                         </div>
-                                    </div>
-
-                              </div>  <!-- author_info -->
-                            </div><!-- card_footer -->
-
-                         </div><!--info_section -->
-                    </div> <!--derscription_container -->
-                </div><!-- card_container -->
-
+                                    </div>  <!-- author_info -->
+                                </div><!-- card_footer -->
+                            </div><!--info_section -->
+                        </div> <!--derscription_container -->
+                    </div><!-- card_container -->
+                </a>
 
                  <!-- card5 -->
-                <div class="card_container">
-                    <div class="image_container">
-                        <img src="technology.jpg" alt="gaming img">
-                    </div>
-                    <div class="derscription_container5">
-                        <div class="info_section">
-                            <div class="card_type5">
-                                <span>Technology</span>
-                            </div>
-                            <div class="cardtype_heading">
-                                <h2>How Smart Devices Are Changing Everyday Life</h2>
-                            </div>
-                            <div class="cardtype_info">
-                                <p>Discover how smart devices are making everyday life easier, faster, and more connected.</p>
-                            </div>
-                            <div class="card_footer">
-                                <div class="author_img">
-                                    <img src="woman (1).png" alt="">
+                <a href="#" class="ancard5">
+                    <div class="card_container">
+                        <div class="image_container">
+                            <img src="technology.jpg" alt="gaming img">
+                        </div>
+                        <div class="derscription_container5">
+                            <div class="info_section">
+                                <div class="card_type5">
+                                    <span>Technology</span>
                                 </div>
-                                <div class="author_info">
-                                    <div class="name">
-                                        <span>Tamoghna</span>
+                                <div class="cardtype_heading">
+                                    <h2>How Smart Devices Are Changing Everyday Life</h2>
+                                </div>
+                                <div class="cardtype_info">
+                                    <p>Discover how smart devices are making everyday life easier, faster, and more connected.</p>
+                                </div>
+                                <div class="card_footer">
+                                    <div class="author_img">
+                                        <img src="woman (1).png" alt="">
                                     </div>
-                                    <div class="dob_timeread">
-                                        <div class="dob">
-                                            <span>Oct 4, 2006</span>
+                                    <div class="author_info">
+                                        <div class="name">
+                                            <span>Tamoghna</span>
                                         </div>
-                                        <div class="timeread_container">
-                                            <div class="dot">
-                                                <span>.</span>
+                                        <div class="dob_timeread">
+                                            <div class="dob">
+                                                <span>Oct 4, 2006</span>
                                             </div>
-                                            <div class="timeread">
-                                                <span>7 min read</span>
+                                            <div class="timeread_container">
+                                                <div class="dot">
+                                                    <span>.</span>
+                                                </div>
+                                                <div class="timeread">
+                                                    <span>7 min read</span>
+                                                </div>
                                             </div>
                                         </div>
-                                    </div>
-
-            </div>  <!-- author_info -->
-            </div><!-- card_footer -->
-            </div><!--info_section -->
-            </div> <!--derscription_container -->
-            </div><!-- card_container -->
+                                    </div>  <!-- author_info -->
+                                </div><!-- card_footer -->
+                            </div><!--info_section -->
+                        </div> <!--derscription_container -->
+                    </div><!-- card_container -->
+                </a>
 
              <!-- card6 -->
-
-
+             <a href="#" class="ancard6">
                 <div class="card_container">
                     <div class="image_container">
                         <img src="food.jpg" alt="gaming img">
@@ -520,146 +525,150 @@
                                             </div>
                                         </div>
                                     </div>
-
-            </div>  <!-- author_info -->
-            </div><!-- card_footer -->
-            </div><!--info_section -->
-            </div> <!--derscription_container -->
-            </div><!-- card_container --> 
+                                </div>  <!-- author_info -->
+                            </div><!-- card_footer -->
+                        </div><!--info_section -->
+                    </div> <!--derscription_container -->
+                </div><!-- card_container --> 
+             </a>
 
             <!-- card7 -->
-                <div class="card_container">
-                    <div class="image_container">
-                        <img src="photography.jpg" alt="gaming img">
-                    </div>
-                    <div class="derscription_container7">
-                        <div class="info_section">
-                            <div class="card_type3">
-                                <span>Photography</span>
-                            </div>
-                            <div class="cardtype_heading">
-                                <h2>A Beginner's Guide to Travel Photography</h2>
-                            </div>
-                            <div class="cardtype_info">
-                                <p>Learn essential tips and tricks to capture stunning travel photos, even with a basic camera.</p>
-                            </div>
-                            <div class="card_footer">
-                                <div class="author_img">
-                                    <img src="man4.png" alt="">
+                <a href="#" class="ancard7">
+                    <div class="card_container">
+                        <div class="image_container">
+                            <img src="photography.jpg" alt="gaming img">
+                        </div>
+                        <div class="derscription_container7">
+                            <div class="info_section">
+                                <div class="card_type3">
+                                    <span>Photography</span>
                                 </div>
-                                <div class="author_info">
-                                    <div class="name">
-                                        <span>Ankur</span>
+                                <div class="cardtype_heading">
+                                    <h2>A Beginner's Guide to Travel Photography</h2>
+                                </div>
+                                <div class="cardtype_info">
+                                    <p>Learn essential tips and tricks to capture stunning travel photos, even with a basic camera.</p>
+                                </div>
+                                <div class="card_footer">
+                                    <div class="author_img">
+                                        <img src="man4.png" alt="">
                                     </div>
-                                    <div class="dob_timeread">
-                                        <div class="dob">
-                                            <span>Sept 26, 2006</span>
+                                    <div class="author_info">
+                                        <div class="name">
+                                            <span>Ankur</span>
                                         </div>
-                                        <div class="timeread_container">
-                                            <div class="dot">
-                                                <span>.</span>
+                                        <div class="dob_timeread">
+                                            <div class="dob">
+                                                <span>Sept 26, 2006</span>
                                             </div>
-                                            <div class="timeread">
-                                                <span>30 min read</span>
+                                            <div class="timeread_container">
+                                                <div class="dot">
+                                                    <span>.</span>
+                                                </div>
+                                                <div class="timeread">
+                                                    <span>30 min read</span>
+                                                </div>
                                             </div>
                                         </div>
-                                    </div>
-
-            </div>  <!-- author_info -->
-            </div><!-- card_footer -->
-            </div><!--info_section -->
-            </div> <!--derscription_container -->
-            </div><!-- card_container --> 
+                                    </div>  <!-- author_info -->
+                                </div><!-- card_footer -->
+                            </div><!--info_section -->
+                        </div> <!--derscription_container -->
+                    </div><!-- card_container --> 
+                </a>
 
             <!-- card8 -->
-                <div class="card_container">
-                    <div class="image_container">
-                        <img src="self.jpg" alt="gaming img">
-                    </div>
-                    <div class="derscription_container8">
-                        <div class="info_section">
-                            <div class="card_type">
-                                <span>Self Development</span>
-                            </div>
-                            <div class="cardtype_heading">
-                                <h2>Small Habits That Create Big Changes</h2>
-                            </div>
-                            <div class="cardtype_info">
-                                <p>Explore easy and effective habits that can help you stay motivated, productive and happier every day.</p>
-                            </div>
-                            <div class="card_footer">
-                                <div class="author_img">
-                                    <img src="woman (1).png" alt="">
+                <a href="#" class="ancard8">
+                    <div class="card_container">
+                        <div class="image_container">
+                            <img src="self.jpg" alt="gaming img">
+                        </div>
+                        <div class="derscription_container8">
+                            <div class="info_section">
+                                <div class="card_type">
+                                    <span>Self Development</span>
                                 </div>
-                                <div class="author_info">
-                                    <div class="name">
-                                        <span>Amrita</span>
+                                <div class="cardtype_heading">
+                                    <h2>Small Habits That Create Big Changes</h2>
+                                </div>
+                                <div class="cardtype_info">
+                                    <p>Explore easy and effective habits that can help you stay motivated, productive and happier every day.</p>
+                                </div>
+                                <div class="card_footer">
+                                    <div class="author_img">
+                                        <img src="woman (1).png" alt="">
                                     </div>
-                                    <div class="dob_timeread">
-                                        <div class="dob">
-                                            <span>Dec 6, 2006</span>
+                                    <div class="author_info">
+                                        <div class="name">
+                                            <span>Amrita</span>
                                         </div>
-                                        <div class="timeread_container">
-                                            <div class="dot">
-                                                <span>.</span>
+                                        <div class="dob_timeread">
+                                            <div class="dob">
+                                                <span>Dec 6, 2006</span>
                                             </div>
-                                            <div class="timeread">
-                                                <span>2 min read</span>
+                                            <div class="timeread_container">
+                                                <div class="dot">
+                                                    <span>.</span>
+                                                </div>
+                                                <div class="timeread">
+                                                    <span>2 min read</span>
+                                                </div>
                                             </div>
                                         </div>
-                                    </div>
-
-            </div>  <!-- author_info -->
-            </div><!-- card_footer -->
-            </div><!--info_section -->
-            </div> <!--derscription_container -->
-            </div><!-- card_container --> 
+                                    </div>  <!-- author_info -->
+                                </div><!-- card_footer -->
+                            </div><!--info_section -->
+                        </div> <!--derscription_container -->
+                    </div><!-- card_container --> 
+                </a>
 
             <!-- card9 -->
-                <div class="card_container">
-                    <div class="image_container">
-                        <img src="space.jpg" alt="gaming img">
-                    </div>
-                    <div class="derscription_container9">
-                        <div class="info_section">
-                            <div class="card_type4">
-                                <span>Space</span>
-                            </div>
-                            <div class="cardtype_heading9">
-                                <h2>The Mystery of Space and Our Universe</h2>
-                            </div>
-                            <div class="cardtype_info">
-                                <p>From black holes to distant galaxies, explore the wonders of the universe and the latest discoveries in space.</p>
-                            </div>
-                            <div class="card_footer">
-                                <div class="author_img">
-                                    <img src="man3.png" alt="">
+                <a href="#" class="ancard9">
+                    <div class="card_container">
+                        <div class="image_container">
+                            <img src="space.jpg" alt="gaming img">
+                        </div>
+                        <div class="derscription_container9">
+                            <div class="info_section">
+                                <div class="card_type4">
+                                    <span>Space</span>
                                 </div>
-                                <div class="author_info">
-                                    <div class="name9">
-                                        <span>Ashish</span>
+                                <div class="cardtype_heading9">
+                                    <h2>The Mystery of Space and Our Universe</h2>
+                                </div>
+                                <div class="cardtype_info">
+                                    <p>From black holes to distant galaxies, explore the wonders of the universe and the latest discoveries in space.</p>
+                                </div>
+                                <div class="card_footer">
+                                    <div class="author_img">
+                                        <img src="man3.png" alt="">
                                     </div>
-                                    <div class="dob_timeread">
-                                        <div class="dob">
-                                            <span>Nov 19, 2006</span>
+                                    <div class="author_info">
+                                        <div class="name9">
+                                            <span>Ashish</span>
                                         </div>
-                                        <div class="timeread_container">
-                                            <div class="dot">
-                                                <span>.</span>
+                                        <div class="dob_timeread">
+                                            <div class="dob">
+                                                <span>Nov 19, 2006</span>
                                             </div>
-                                            <div class="timeread">
-                                                <span>16 min read</span>
+                                            <div class="timeread_container">
+                                                <div class="dot">
+                                                    <span>.</span>
+                                                </div>
+                                                <div class="timeread">
+                                                    <span>16 min read</span>
+                                                </div>
                                             </div>
                                         </div>
-                                    </div>
-
-            </div>  <!-- author_info -->
-            </div><!-- card_footer -->
-            </div><!--info_section -->
-            </div> <!--derscription_container -->
-            </div><!-- card_container -->
+                                    </div>  <!-- author_info -->
+                                </div><!-- card_footer -->
+                            </div><!--info_section -->
+                        </div> <!--derscription_container -->
+                    </div><!-- card_container -->
+                </a>
             
              <!-- card10 -->
+             <a href="#" class="ancard10">
                 <div class="card_container">
                     <div class="image_container">
                         <img src="environment.jpg" alt="gaming img">
@@ -696,14 +705,12 @@
                                             </div>
                                         </div>
                                     </div>
-
-            </div>  <!-- author_info -->
-            </div><!-- card_footer -->
-            </div><!--info_section -->
-            </div> <!--derscription_container -->
-            </div><!-- card_container -->
-            
-
+                                </div>  <!-- author_info -->
+                            </div><!-- card_footer -->
+                        </div><!--info_section -->
+                    </div> <!--derscription_container -->
+                </div><!-- card_container -->
+        </a>
 
         </div><!--card_main_container -->
         </div>
@@ -712,17 +719,19 @@
     <div class="stay_curious_main">
             <div class="stay_curious">
                 <div class="keep_reading_container">
-                <div class="tele_logo">
-                    <img src="round.png" alt="telegram img">
-                </div>
-                <div class="stay_curious_info">
-
-                    <div class="keep_reading">
-                        <span>Stay Curious. Keep Reading.</span>
-                    </div>
-                    <div class="keep_reading_para">
-                        <p>Subscribe to get the latest blogs and updates direct to your inbox.</p>
-                    </div>
+                    <a href="#">
+                        <div class="tele_logo">
+                            <img src="round.png" alt="telegram img">
+                        </div>
+                    </a>
+                
+                    <div class="stay_curious_info">
+                        <div class="keep_reading">
+                            <span>Stay Curious. Keep Reading.</span>
+                        </div>
+                        <div class="keep_reading_para">
+                            <p>Subscribe to get the latest blogs and updates direct to your inbox.</p>
+                        </div>
                     </div>
                 </div><!-- stay_curious_info -->
                 
@@ -745,8 +754,8 @@
                 <div class="footer_title">
                     <a href="">
                         <span id="blog">Blogs</span><span id="hub">Hub</span>
-                </div>
                     </a>
+                </div>
                 <div class="footer_des">
                    <span>Ideas. Stories. Beyond</span>
                 </div>
@@ -760,8 +769,8 @@
                             <li><a href="#">About us</a></li>
                             <li><a href="#">Privacy</a></li>
                         </ul>
-                </nav>
-            </div>
+                    </nav>
+                </div>
             </div>
             <div class="footer_side_container">
               <div class="footer_search_container">
@@ -770,39 +779,38 @@
                     <img src="instagram.png" alt="">
                 </div>
                </a>
+               <a href="#">
                 <div class="github">
                     <img src="github.png" alt="">
                 </div>
-                <div class="linkedin">
+               </a>
+                <a href="">
+                    <div class="linkedin">
                     <img src="linkedin.png" alt="">
                 </div>
-                <div class="youtube">
+                </a>
+                <a href="#">
+                    <div class="youtube">
                     <img src="youtube.png" alt="">
                 </div>
+                </a>
               </div>  
             </div>
         </div>
-</div>
+    </div>
 
     <!-- FOOTER  -->
      <footer>
         <div class="footer">
-            
-                <div class="copyright">
+            <div class="copyright">
                 <p>© 2026 Blogshub. All rights reserved.</p>
             </div>
             <div class="shubham">
                 <img src="shubham.png" alt="">
             </div>
-            </div>
-            
         </div>
-
      </footer>
 
  </div>
-        
-        <!-- ----------------------------- -->
-        
 </body>
 </html>
