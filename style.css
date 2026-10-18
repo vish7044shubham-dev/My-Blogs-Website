@@ -1,4 +1,3 @@
-
 *{
     margin: 0;
     padding: 0;
@@ -25,7 +24,7 @@ body{
     justify-content: center;
     padding: 15px 0;
     position: sticky;    
-    top: 0;             
+    top: 0;              
     z-index: 1000;       
 }
 
@@ -36,6 +35,7 @@ body{
     grid-template-columns: 1fr 1.5fr 1fr;
     align-items: center;
     gap: 20px;
+    position: relative;
 }
 .header_inside_container a{
     text-decoration: none;
@@ -64,6 +64,7 @@ body{
     font-weight: 700;
     color: #486283ee;
     text-decoration: none;
+    transition: color 0.2s ease;
 }
 
 .horizontal_list{
@@ -86,33 +87,104 @@ body{
     gap: 15px;
 }
 
+/* 1. Stylish Search Bar */
 .header_search_container{
+    background: rgba(255, 255, 255, 0.05);
     border: 1px solid #26364A;
-    border-radius: 12px;
-    width: 200px;
-    height: 38px;
+    border-radius: 50px;
+    width: 220px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    padding: 0 14px;
+    gap: 10px;
+    transition: all 0.3s ease;
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.3);
+}
+
+.header_search_container:hover {
+    border-color: #3b506b;
+    background: rgba(255, 255, 255, 0.08);
+}
+
+.header_search_container:focus-within {
+    border-color: #2563EB;
+    background: #0d1b2e;
+    box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.25);
+}
+
+.search_icon{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.search_icon img{
+    height: 16px;
+    width: 16px; 
+    opacity: 0.7;
+    transition: opacity 0.2s ease;
+}
+
+.header_search_container:focus-within .search_icon img {
+    opacity: 1;
+}
+
+.text {
+    flex: 1;
     display: flex;
     align-items: center;
 }
 
-.search_icon{
-    margin-left: 10px;
+.search_input {
+    width: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    color: white;
+    font-family: "Raleway", sans-serif;
+    font-size: 13.5px;
+    font-weight: 500;
 }
 
-.search_icon img{
-    height: 18px;
-    width: 18px; 
+.search_input::placeholder {
+    color: #64748b;
 }
 
-.text span{
-    color: #486283ee;
-    font-size: 13px;
-    margin-left: 5px;
+.dark_image_container {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
 }
 
 .dark_image_container img{
     height: 30px;
     width: 30px;
+}
+
+/* Hamburger Menu Toggle (Hidden on Desktop) */
+.menu_toggle {
+    display: none;
+}
+
+.hamburger_menu {
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 26px;
+    height: 18px;
+    cursor: pointer;
+    flex-shrink: 0;
+}
+
+.hamburger_menu span {
+    display: block;
+    height: 2.5px;
+    width: 100%;
+    background-color: white;
+    border-radius: 3px;
+    transition: all 0.3s ease;
 }
 
 /* ----------HERO CONTAINER-------------- */
@@ -150,7 +222,7 @@ body{
 }
 
 .heading h1{
-    font-size: clamp(35px, 5vw, 60px); /* Scales fluidly based on screen size */
+    font-size: clamp(35px, 5vw, 60px);
     line-height: 1.2;
 }
 
@@ -227,7 +299,6 @@ body{
     width: 100%;
     height: 100%;
     object-fit: cover;
-
 }
 
 .feature_secondmain_container{
@@ -329,18 +400,14 @@ body{
     display: flex;
     justify-content: space-between;
     margin: 0 30px;
-   
 }
 .browse_heading_main_container a{
     text-decoration: none;
-
 }
 
 .browse_heading_container{
     border-left: 4px solid #2563EB;
     height: fit-content;
-
-    
 }
 
 .viewall{
@@ -354,7 +421,7 @@ body{
     font-weight: 600;
 }
 .viewall_img {
-     display: flex;
+    display: flex;
     align-items: center;
     object-fit: cover;
 }
@@ -397,25 +464,8 @@ body{
     white-space: nowrap;       
     flex-shrink: 0;           
     cursor: pointer;
-
 }
 
-.browse_type_card_img img{
-    width: 20px;
-    height: 20px;
-    
-}
-
-.browse_type_card_text span{
-    color: white;
-    font-size: 16px;
-}
-
-.browse_type_box{
-    display: flex;
-    align-items: center;
-    gap: 5px;
-}
 .browse_type_card:hover {
     background-color: #3D8CFE;
 }
@@ -451,12 +501,11 @@ body{
 }
 
 /* ----------LATEST ARTICLE--------------- */
-/* LATEST ARTICLE HEADER SAME AS BROWSE CONTAINER SO I COPY PATSED IT   */
 
 /*-------CARD CONTAINER------*/
 .card_main_container{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 350fr));  
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));  
     margin: 20px 30px;
     gap: 24px;
 }
@@ -468,6 +517,7 @@ body{
     display: flex;
     flex-direction: column; 
     justify-content: space-between;
+    height: 100%;
     transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
@@ -481,7 +531,8 @@ body{
 }
 .image_container img{
     height: 100%;
-    width: 100%;    
+    width: 100%;
+    object-fit: cover;
 }
 
 .info_section{
@@ -489,7 +540,7 @@ body{
     display: flex;
     flex-direction: column;
     justify-content: end;
-    
+    gap: 12px;
 }
 .card_type {
     background-color: #E2C5FE;
@@ -574,8 +625,7 @@ body{
 /* 99999999999 */
 .derscription_container9{
     background-color: #051126; 
-       overflow-: hidden;
-
+    flex: 1;
 }
 .derscription_container9 .dob_timeread span ,
 .derscription_container9 .cardtype_info p{
@@ -588,6 +638,7 @@ body{
     width: 100%;
     height: 100%;
     color: white;
+    flex: 1;
 }
 .derscription_container1 .dob_timeread span ,
 .derscription_container1 .cardtype_info p{
@@ -602,6 +653,7 @@ body{
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover; 
+    flex: 1;
 }
 .derscription_container2 .dob_timeread span ,
 .derscription_container2 .cardtype_info p{
@@ -609,15 +661,9 @@ body{
 }
 /* 444444444 */
 .derscription_container4{
-    /* background-image: url(AI\ bg.jpg);
-    width: 100%;
-    height: 100%;
-    background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;  */
-  background-color: black;
-  color:white ;
-  
+    background-color: black;
+    color:white ;
+    flex: 1;
 }
 .derscription_container4 .dob_timeread span ,
 .derscription_container4 .cardtype_info p{
@@ -630,9 +676,10 @@ body{
     width: 100%;
     height: 100%;
     background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover; 
-  color: white;
+    background-position: center;
+    background-size: cover; 
+    color: white;
+    flex: 1;
 }
 /* 7777777777 */
 .derscription_container7{
@@ -640,9 +687,10 @@ body{
     width: 100%;
     height: 100%;
     background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover; 
-  color: black;
+    background-position: center;
+    background-size: cover; 
+    color: black;
+    flex: 1;
 }
 .derscription_container7 .dob_timeread span ,
 .derscription_container7 .cardtype_info p{
@@ -657,6 +705,7 @@ body{
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover; 
+    flex: 1;
 }
 .derscription_container3 .dob_timeread span ,
 .derscription_container3 .cardtype_info p{
@@ -669,22 +718,20 @@ body{
     width: 100%;
     height: 100%;
     background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover; 
+    background-position: center;
+    background-size: cover; 
+    flex: 1;
 }
-
 
 .derscription_container10{
     background-color: #EAFAF5;
+    flex: 1;
 }
 .derscription_container6{
     background-color: #EAFAF5;
+    flex: 1;
 }
-.info_section{
-    display: flex;
-    flex-direction: column;
-    gap: 12px;
-}
+
 .card_footer{
     display: flex;
     gap: 8px;
@@ -699,10 +746,6 @@ body{
 .author_img img{
     height: 30px;
     width : 30px;
-}
-
-.dob_timeread{
-    display: flex;
 }
 
 .timeread_container{
@@ -740,6 +783,7 @@ body{
     justify-content: space-between;
     align-items: center;
     padding: 2rem 4rem;
+    gap: 20px;
 }
 
 .tele_logo img{
@@ -748,7 +792,7 @@ body{
 }
 .keep_reading_container{
     display: flex;
-    
+    align-items: center;
     gap: 1rem;
 }
 
@@ -761,7 +805,6 @@ body{
 .keep_reading_para{
     font-size: 1.2rem;
     color: #9EB2C5;
-
 }
 .stay_curious_info{
     display: flex;
@@ -835,9 +878,6 @@ body{
     display: flex;
     justify-content: center;
     padding: 15px 0;
-    position: sticky;    
-    top: 0;             
-    z-index: 1000;       
 }
 
 .footer_inside_container{
@@ -912,13 +952,229 @@ body{
 .footer {
     background-color: #07111F;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-    padding: 15px 0;
-    gap: 66.5%;
+    padding: 15px 4%;
 }
 
 .copyright{
     color:#435C7C;
 }
 
+
+/* ANCHOR------------------------- */
+
+.ancard1, .ancard2, .ancard3, .ancard4, .ancard5,
+.ancard6, .ancard7, .ancard8, .ancard9, .ancard10 {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+}
+
+
+/* =========================================================
+   MOBILE RESPONSIVENESS MEDIA QUERIES
+   ========================================================= */
+
+@media screen and (max-width: 900px) {
+    /* 1. Header, Search Bar & Hamburger Menu */
+    .header_inside_container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .header_title span {
+        font-size: 24px;
+    }
+
+    .header_des span {
+        font-size: 11px;
+    }
+
+    .hamburger_menu {
+        display: flex;
+    }
+
+    .header_nav_container {
+        display: none;
+        position: absolute;
+        top: calc(100% + 15px);
+        left: -4.3%;
+        width: 108.6%;
+        background-color: #07111F;
+        border-top: 1px solid #1E293B;
+        border-bottom: 1px solid #1E293B;
+        padding: 20px 0;
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
+        z-index: 999;
+    }
+
+    .header_nav_container .horizontal_list {
+        flex-direction: column;
+        align-items: center;
+        gap: 18px;
+    }
+
+    /* Toggle dropdown when hamburger is clicked */
+    .menu_toggle:checked ~ .header_nav_container {
+        display: block;
+    }
+
+    /* Animate hamburger icon into an 'X' when open */
+    .menu_toggle:checked ~ .header_side_container .hamburger_menu span:nth-child(1) {
+        transform: translateY(7.5px) rotate(45deg);
+    }
+    .menu_toggle:checked ~ .header_side_container .hamburger_menu span:nth-child(2) {
+        opacity: 0;
+    }
+    .menu_toggle:checked ~ .header_side_container .hamburger_menu span:nth-child(3) {
+        transform: translateY(-7.5px) rotate(-45deg);
+    }
+
+    .header_search_container {
+        width: 155px;
+        height: 36px;
+        padding: 0 10px;
+    }
+
+    .header_side_container {
+        gap: 10px;
+    }
+
+    /* 4. Featured Article Mobile Layout */
+    .featured_article_container {
+        width: 92%;
+        margin: 25px auto;
+    }
+
+    .feature_content {
+        flex-direction: column;
+        gap: 0;
+    }
+
+    .feature_img {
+        min-height: 200px;
+        max-height: 240px;
+    }
+
+    .feature_secondmain_container {
+        padding: 18px;
+    }
+
+    .second_secondbox img {
+        margin-top: 0;
+    }
+
+    /* 3. Cards Stacked One by One on Mobile */
+    .card_main_container {
+        grid-template-columns: 1fr;
+        margin: 20px 16px;
+        gap: 20px;
+    }
+
+    .browse_heading_main_container,
+    .browse_type_main_container {
+        margin: 0 16px;
+    }
+
+    .browse_heading_main_container h1 {
+        font-size: 20px;
+    }
+
+    /* 2. Email Section, Social Icons & Footer Mobile Adjustments */
+    .stay_curious {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 2rem 1.5rem;
+        gap: 20px;
+    }
+
+    .keep_reading_container {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 12px;
+    }
+
+    .keep_reading {
+        font-size: 1.5rem;
+    }
+
+    .keep_reading_para {
+        font-size: 1rem;
+    }
+
+    .enter_mail_container {
+        width: 100%;
+    }
+
+    .footer_inside_container {
+        grid-template-columns: 1fr;
+        text-align: center;
+        justify-items: center;
+        gap: 22px;
+        padding: 10px 0;
+    }
+
+    .footer_nav .horizontal_list {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 1rem 1.5rem;
+    }
+
+    .footer_nav_container ul a {
+        font-size: 16px;
+    }
+
+    .footer_side_container {
+        justify-content: center;
+        width: 100%;
+    }
+
+    .footer_search_container {
+        justify-content: center;
+        gap: 1.8rem;
+    }
+
+    .footer_search_container img {
+        height: 34px;
+        width: 34px;
+    }
+
+    .footer {
+        flex-direction: column;
+        gap: 15px;
+        text-align: center;
+        padding: 20px 16px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .header_search_container {
+        width: 130px;
+        height: 34px;
+    }
+
+    .search_input {
+        font-size: 12px;
+    }
+
+    .dark_image_container img {
+        height: 24px;
+        width: 24px;
+    }
+
+    .hero_container {
+        height: 420px;
+    }
+
+    .enter_mail input {
+        padding: 0 12px;
+        font-size: 13px;
+    }
+
+    .subscribe {
+        padding: 0 16px;
+    }
+}
