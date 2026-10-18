@@ -1091,11 +1091,11 @@ body{
         gap: 20px;
     }
 
-    .keep_reading_container {
+    /* .keep_reading_container {
         flex-direction: column;
         align-items: flex-start;
         gap: 12px;
-    }
+    } */
 
     .keep_reading {
         font-size: 1.5rem;
@@ -1177,4 +1177,12 @@ body{
     .subscribe {
         padding: 0 16px;
     }
+}
+
+.latest_main_container{
+    margin-top: 20px;
+}
+
+.feature_secondmain_container{
+    margin-top: 10px;
 }
